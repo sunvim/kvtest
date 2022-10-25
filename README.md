@@ -1,2 +1,2 @@
 # kvtest
-benchmark for ervey kv store
+benchmark for every kv store
