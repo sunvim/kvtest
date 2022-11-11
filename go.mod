@@ -3,7 +3,9 @@ module github.com/sunvim/kvtest
 go 1.19
 
 require (
+	github.com/akrylysov/pogreb v0.10.1
 	github.com/cockroachdb/pebble v0.0.0-20221021145029-f34af25a0187
+	github.com/sunvim/coqdb v0.0.4
 	github.com/torquem-ch/mdbx-go v0.26.1
 	go.etcd.io/bbolt v1.3.6
 )
@@ -19,7 +21,7 @@ require (
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
-	github.com/klauspost/compress v1.12.3 // indirect
+	github.com/klauspost/compress v1.15.11 // indirect
 	github.com/kr/pretty v0.2.1 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.2-0.20181231171920-c182affec369 // indirect
@@ -28,7 +30,9 @@ require (
 	github.com/prometheus/client_model v0.2.1-0.20210607210712-147c58e9608a // indirect
 	github.com/prometheus/common v0.32.1 // indirect
 	github.com/prometheus/procfs v0.7.3 // indirect
+	github.com/sunvim/utils v0.0.8 // indirect
 	golang.org/x/exp v0.0.0-20200513190911-00229845015e // indirect
 	golang.org/x/sys v0.0.0-20221010170243-090e33056c14 // indirect
 	google.golang.org/protobuf v1.27.1 // indirect
+	gopkg.in/eapache/queue.v1 v1.1.0 // indirect
 )

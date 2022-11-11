@@ -134,6 +134,12 @@ func createtestdb(dbtype, path string, bsync bool) *timeStatistics {
 	case "mdbx":
 		db = NewMDBX()
 		newpath += "/mdbx"
+	case "coqdb":
+		db = NewCoqDB()
+		newpath += "/coqdb"
+	case "pogreb":
+		db = NewPogrebDB()
+		newpath += "/pogreb"
 	default:
 		log.Printf("%s dbtype can't test\n", dbtype)
 		return nil
@@ -237,6 +243,10 @@ func main() {
 		worktomap(mapstatis, "pebble", t2)
 		t3 := createtestdb("mdbx", *dFile, *bsync)
 		worktomap(mapstatis, "mdbx", t3)
+		t4 := createtestdb("coqdb", *dFile, *bsync)
+		worktomap(mapstatis, "coqdb", t4)
+		t5 := createtestdb("pogreb", *dFile, *bsync)
+		worktomap(mapstatis, "pogreb", t5)
 	default:
 		t := createtestdb(*dbtype, *dFile, *bsync)
 		worktomap(mapstatis, *dbtype, t)
